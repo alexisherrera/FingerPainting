@@ -1,0 +1,30 @@
+html, .row {
+    background-color: lightcoral;
+    
+}
+#canvas,
+#video {
+    position: relative;
+    text-align: center;
+}
+canvas,
+video {
+    filter: FlipH;
+    transform: scale(-1, 1);
+}
+canvas {
+    background-color: aliceblue;
+}
+
+#top{
+margin-top: -20px;
+}
+#columnOne {
+    text-align: center;
+}
+#columnOne {
+    background-color: lemonchiffon;
+}
+#columnOne h5 {
+    font-size: 12px;
+}

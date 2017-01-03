@@ -1,0 +1,105 @@
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: top;
+    background-color: lightcoral;
+    text-align: center;
+    color: aliceblue;
+}
+body {
+    background-color: lightcoral;
+}
+#about {
+    height: 600px;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+#abouthr {
+    width: 190px;
+}
+#services {
+    height: 600px;
+}
+#mainNav {
+    background-color: #f6f6f6;
+}
+#sel1 {
+    position: relative;
+    width: 40%;
+    align-self: center;
+    text-align: center;
+    align-content: center;
+}
+h2 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+header .header-content {
+    position: relative;
+    text-align: center;
+    padding: 100px 15px 100px;
+    width: 100%;
+}
+header .header-content .header-content-inner h1 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+header .header-content .header-content-inner hr {
+    margin: 20px auto;
+    width: 650px;
+}
+header .header-content .header-content-inner p {
+    font-weight: 300;
+    color: aliceblue;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+    header {
+        min-height: 100%;
+    }
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding: 0 50px;
+    }
+    header .header-content .header-content-inner {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 7px;
+    }
+    header .header-content .header-content-inner h1 {
+        padding-top: 5px;
+        font-size: 50px;
+    }
+    header .header-content .header-content-inner p {
+        font-size: 18px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
