@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FingerPaint</title>
+    <title>FingerPaint - blue</title>
     <link rel="stylesheet" href="../css/style_camera.css">
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -12,6 +12,7 @@
     <script src="../js/tracking.js"></script>
     <script src="../js/spline.js"></script>
     <script src="../js/draw.js"></script>
+    <script src = "../js/color_registration.js"></script>
 </head>
 
 <body>
@@ -34,16 +35,17 @@
     <div class="row">
         <div id="columnOne" class="col-md-6 col-md-offset-3">
             <h4>Pen colors:</h4>
-            <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">B</button>
-                <button type="button" class="btn btn-default">Y</button>
-                <button type="button" class="btn btn-default">R</button>
-                <button type="button" class="btn btn-default">G</button>
-                <button type="button" class="btn btn-default">BK</button>
-                <button type="button" class="btn btn-default">R</button>
+            <div id="color_switches" class="btn-group" data-toggle="buttons">
+                <form id="buuuuts">
+                    <input id="blueC" type="radio" name="color_options" value="#4b73d8" checked="checked"> B
+                    <input id="yellowC" type="radio" name="color_options" value="#e8d140"> Y
+                    <input id="redC" type="radio" name="color_options" value="#e85740"> R
+                    <input id="greenC" type="radio" name="color_options" value="#2ba84c"> G
+                    <input id="blackC" type="radio" name="color_options" value="#000000"> BK
+                    <input id="purpleC" type="radio" name="color_options" value="#8f799b"> P
+                </form>
             </div>
         </div>
-
 
     </div>
     <div id="bottom" class="row">

@@ -1,6 +1,5 @@
-
 window.onload = function () {
-    
+
     var video = document.getElementById('video');
     var canvas = document.getElementById('canvas');
     var context = canvas.getContext('2d');
@@ -20,7 +19,16 @@ window.onload = function () {
         console.log("here");
     }
 
-    var tracker = new tracking.ColorTracker(['magenta', 'cyan']);
+    var colorTracking;
+    var colorTrackingName = document.title;
+    if (colorTrackingName === "FingerPaint - green") {
+        colorTracking = 'green';
+    } else if (colorTrackingName === "FingerPaint - blue") {
+        colorTracking = 'blue';
+    } else {
+        colorTracking = 'magenta';
+    }
+    var tracker = new tracking.ColorTracker([colorTracking]);
 
     tracking.track('#video', tracker, {
         camera: true
@@ -38,8 +46,6 @@ window.onload = function () {
         event.data.forEach(function (rect) {
             if (rect.color === 'magenta') {
                 draw(rect);
-            } else if (rect.color === 'cyan') {
-                erase(rect);
             }
         });
 
@@ -47,10 +53,6 @@ window.onload = function () {
 
     function draw(rect) {
         drawSegments[segment].push(rect.x + rect.width / 2, rect.y + rect.height / 2);
-    }
-
-    function erase(rect) {
-        context.clearRect(rect.x, rect.y, rect.width, rect.height);
     }
 
     (function loop() {
