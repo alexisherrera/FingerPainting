@@ -8,7 +8,7 @@ To get this running locally I recomend downloading the entire repo and saving it
 
 ### Clone repo
 
-If you have git set up on your machine simply type the following line into your commandline
+If you have git set up on your machine simply type the following line into your command line:
 
 ```
 $ git clone https://github.com/alexisherrera/VisualPainting
