@@ -1,6 +1,8 @@
 # VisualPainting
 
 Computer vision powered painting application made with tracking.js, javascript, and HTML/CSS.
+
+## Try it out
 Check it out [here](https://alexisherrera.github.io/VisualPainting/)!
 ## Getting Started
 
